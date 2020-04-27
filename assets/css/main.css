@@ -2459,7 +2459,7 @@ input, select, textarea {
 	#footer {
 		position: relative;
 		overflow: hidden;
-		padding: 6em 0 6em 0;
+		padding: 4em 0 6em 0;
 		background: #2b252c;
 		color: #fff;
 	}
@@ -3136,3 +3136,58 @@ input, select, textarea {
 					}
 
 	}
+
+	/* Ajout de CSS */
+
+/* Carousel artistes et releases */
+
+.carousel .reel{
+	display: flex;
+}
+
+.carousel .reel article{
+	flex-shrink: 0;
+}
+
+/* A propos/about */
+
+#about{
+	padding: 4.5em 0 1.5em 0;
+}
+
+/* image centre du site */
+
+.image.tacid {
+	display: block;
+	width: 100%;
+	margin: auto;
+	padding-top: 4em;
+	padding-bottom: 1em;
+}
+
+/* Features */
+
+#releases{
+	text-align: center;
+	background-color: #ffffff;
+	padding: 4.5em 0 1.5em 0;
+	margin-bottom: 0;
+}
+
+/* Formulaire de contact */
+
+#contact{
+	padding-top: 3em;
+}
+
+#contact h3{
+	font-size: xx-large;
+}
+
+#contact-form{
+	padding-bottom: 4em;
+}
+
+
+
+

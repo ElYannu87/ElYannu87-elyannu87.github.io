@@ -29,6 +29,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+img{
+	max-width: 100%;
+}
+
 body {
 	line-height: 1;
 }
@@ -3189,5 +3193,42 @@ input, select, textarea {
 }
 
 
+
+/* Page artiste */
+
+#artistepage {
+	background-image: url("../../images/header.jpg");
+}
+#artistepage #header{
+	background-image: none;
+	padding: 4em 0 2em 0;
+}
+
+#presentation{
+	display: flex;
+	justify-content: center;
+}
+
+#presentation div{
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	background-color: #ffffff;
+}
+
+#presentation img{
+	border-radius: 5px 0 0 5px;
+}
+
+#presentation h2{
+	padding: 0 1em 0 1em;
+}
+
+#description{
+	color: #ffffff;
+	margin: auto;
+	width: 60%;
+	padding-bottom: 3em;
+}
 
 

@@ -134,7 +134,7 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1.25em;
+		font-size: 1.5em;
 	}
 
 	h4 {
@@ -3199,6 +3199,7 @@ input, select, textarea {
 #artistepage {
 	background-image: url("../../images/header.jpg");
 }
+
 #artistepage #header{
 	background-image: none;
 	padding: 4em 0 2em 0;
@@ -3231,4 +3232,72 @@ input, select, textarea {
 	padding-bottom: 3em;
 }
 
+#releases-artiste{
+	text-align: center;
+	background-color: #ffffff;
+	padding: 4.5em 0 1.5em 0;
+	margin-bottom: 0;
+}
+
+/* Page release */
+
+#releasepage {
+	background-image: url("../../images/header.jpg");
+}
+
+#releasepage #header{
+	background-image: none;
+	padding: 4em 0 2em 0;
+}
+
+#presentation{
+	display: flex;
+	justify-content: center;
+}
+
+#presentation div{
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	background-color: #ffffff;
+}
+
+#presentation img{
+	border-radius: 5px 0 0 5px;
+}
+
+#presentation h2{
+	padding: 0 1em 0 1em;
+}
+
+#description{
+	color: #ffffff;
+	margin: auto;
+	width: 60%;
+	padding-bottom: 3em;
+}
+
+#release-album{
+	text-align: center;
+	background-color: #ffffff;
+	padding: 4.5em 0 4.5em 0;
+	margin-bottom: 0;
+}
+
+#release-soundcloud{
+	margin: 2em 0 2em 0;
+	background-color: #ffffff;
+}
+
+#lien-release{
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	background-color: #ffffff;
+	padding: 2em 0 2em 0;
+}
+
+#lien-release h3{
+	padding: 0 1em 0 1em;
+}
 

@@ -9,7 +9,7 @@ $(function () {
         $.ajax({
 
             type: 'POST',
-            url: 'php/formulaire.php',
+            url: '../../php/formulaire.php',
             data: postdata,
             dataType: 'json',
 
@@ -21,9 +21,9 @@ $(function () {
                 }
 
                 else{
-                    $("#object + .comments").html(result.firstnameError);
-                    $("#mail-client + .comments").html(result.nameError);
-                    $("#mail + .comments").html(result.emailError);
+                    $("#object + .comments").html(result.objectError);
+                    $("#mail-client + .comments").html(result.mail-clientError);
+                    $("#mail + .comments").html(result.mailError);
                     $("#message + .comments").html(result.messageError);
                 }                
             }

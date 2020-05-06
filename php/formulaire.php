@@ -1,4 +1,12 @@
-<?php    $array = array("object" => "", "mail-client" => "", "mail" => "", "message" => "", "objectError" => "", "mail-clientError" => "", "mailError" => "", "messageError" => "", "isSuccess" => false);
+<?php    $array = array("object" => "", 
+                        "mail-client" => "", 
+                        "mail" => "", 
+                        "message" => "", 
+                        "objectError" => "", 
+                        "mail-clientError" => "", 
+                        "mailError" => "", 
+                        "messageError" => "", 
+                        "isSuccess" => false);
 
     $emailTo = "";
 
@@ -13,7 +21,7 @@
 
         if(empty($array["object"])){
 
-            $array["objectError"] = "Veuillez reseigner l'objet de votre message.";
+            $array["objectError"] = "Veuillez renseigner l'objet de votre message.";
             $isSucess = false;
         }
 
@@ -32,23 +40,21 @@
             $emailText .= "Email client: {$array["mail-client"]}\n";
         }
 
-        if($array["mail"] === "--Choisir l'option correspondant à votre demande--"){
+        if(empty($array["mail"])){
 
             $array["mailError"] = "Selectionnez une des 3 options";
             $array["isSuccess"] = false;
-        }
 
-        else{
-            if ($_POST["mail"] === "Contact"){
-                $emailTo = "contact@tacidlane.com"
+        }else{
+
+            if ($array["mail"] == "Contact"){
+                $emailTo = "contact@tacidlane.com"; 
             }
-        
-            if ($_POST["mail"] === "Sounds"){
-                $emailTo = "sounds@tacidlane.com"
+            if ($array["mail"] == "Sounds"){
+                $emailTo = "sounds@tacidlane.com";
             }
-        
-            if ($_POST["mail"] === "Booking"){
-                $emailTo = "booking@tacidlane.com"
+            if ($array["mail"] == "Booking"){
+                $emailTo = "booking@tacidlane.com";
             }
         }
 
@@ -71,6 +77,7 @@
     }    
 
     function isEmail($var){
+        
         return filter_var($var, FILTER_VALIDATE_EMAIL);
     }
 
@@ -78,6 +85,7 @@
         $var = trim($var);
         $var = stripslashes($var);
         $var = htmlspecialchars($var);        
+        
         return $var;
     }
 

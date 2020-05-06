@@ -3285,8 +3285,9 @@ input, select, textarea {
 }
 
 #release-soundcloud{
+	display: flex;
+	justify-content: center;
 	margin: 2em 0 2em 0;
-	background-color: #ffffff;
 }
 
 #lien-release{
